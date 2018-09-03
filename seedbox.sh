@@ -29,46 +29,8 @@ fix_locale
 	
 update_upgrade_system
 
-install_plexmediaserver
+install_transmission
 
-echo ""
-read -p " As default Sonarr and Radarr will be installed. Do you prefer install Sickrage and CouchPotato ? [y/N] " install_searchers
-echo ""
-
-if [ "$install_searchers" = "y" ] ; then
-	install_sickrage
-	
-	install_couchpotato
-	
-	configure_couchpotato
-else
-	install_sonarr
-	
-	install_radarr
-fi
-
-echo ""
-read -p " Would you like install rTorrent + ruTorrent or Transmission ? [r/T] " install_torrent
-echo ""
-
-if [ "$install_torrent" = "r" ] ; then
-	install_rtorrent_rutorrent
-	
-	configure_rutorrent
-	
-	configure_nginx_rutorrent
-	
-	configure_user_rtorrent_rutorrent
-	
-	configure_rtorrent_service
-else
-	install_transmission
-	
-	configure_transmission
-fi
-
-install_jackett
-		
-install_tautulli
+configure_transmission
 		
 show_result
