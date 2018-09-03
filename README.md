@@ -30,7 +30,7 @@ Tautulli               | Installed      | [latest](https://github.com/Tautulli/T
 ## Installation
 
 ```shell
-wget https://raw.githubusercontent.com/Punk--Rock/Seedbox-installer/master/autoinstall.sh
+wget https://raw.githubusercontent.com/1488/Seedbox-installer/master/autoinstall.sh
 
 chmod +x autoinstall.sh
 
