@@ -19,7 +19,7 @@ apt-get install -y git-core > /dev/null 2>&1
 
 mkdir Seedbox-installer
 
-git clone https://github.com/Punk--Rock/Seedbox-installer.git Seedbox-installer --quiet
+git clone https://github.com/Z1488/Seedbox-installer.git Seedbox-installer --quiet
 
 mv Seedbox-installer/* .
 
